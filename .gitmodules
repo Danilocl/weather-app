@@ -1,3 +1,0 @@
-[submodule "weather-app"]
-    path = weather-app
-    url = https://github.com/username/weather-app.git
