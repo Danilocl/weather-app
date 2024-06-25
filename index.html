@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather Prediction</title>
+  </head>
+  <body>
+    <div class="containerDoContainer">
+      <div class="container">
+        <div class="search-box">
+          <i class="fa-solid fa-location-dot"></i>
+          <input
+            type="text"
+            placeholder="Enter your location"
+            id="search-input"
+          />
+          <button class="fa-solid fa-magnifying-glass"></button>
+        </div>
+
+        <div class="not-found">
+          <img src="images/404.png" />
+          <p>Invalid location!!</p>
+        </div>
+
+        <div class="weather-info">
+          <div class="weather-box">
+            <div class="animation">
+              <span></span>
+              <img src="" />
+            </div>
+            <div class="temperature">
+              <div class="text">
+                <span></span>
+                <p></p>
+              </div>
+            </div>
+            <p class="description"></p>
+          </div>
+        </div>
+
+        <div class="forecast">
+          <div class="weather-details">
+            <div class="humidity">
+              <i class="fa-solid fa-water"></i>
+              <div class="text">
+                <span></span>
+                <p>Humidity</p>
+              </div>
+            </div>
+            <div class="wind">
+              <i class="fa-solid fa-wind"></i>
+              <div class="text">
+                <span></span>
+                <p>Wind Speed</p>
+              </div>
+            </div>
+          </div>
+          <table class="table-forecast">
+            <tr>
+              <td class="hour1"></td>
+              <td class="temp1"></td>
+              <td class="description1"></td>
+              <td><img src="" /></td>
+            </tr>
+            <tr>
+              <td class="hour2"></td>
+              <td class="temp2"></td>
+              <td class="description2"></td>
+              <td><img src="" /></td>
+            </tr>
+            <tr>
+              <td class="hour3"></td>
+              <td class="temp3"></td>
+              <td class="description3"></td>
+              <td><img src="" /></td>
+            </tr>
+            <tr>
+              <td class="hour4"></td>
+              <td class="temp4"></td>
+              <td class="description4"></td>
+              <td><img src="" /></td>
+            </tr>
+            <tr>
+              <td class="hour5"></td>
+              <td class="temp5"></td>
+              <td class="description5"></td>
+              <td><img src="" /></td>
+            </tr>
+            <tr>
+              <td class="hour6"></td>
+              <td class="temp6"></td>
+              <td class="description6"></td>
+              <td><img src="" /></td>
+            </tr>
+            <tr>
+              <td class="hour7"></td>
+              <td class="temp7"></td>
+              <td class="description7"></td>
+              <td><img src="" /></td>
+            </tr>
+            <tr>
+              <td class="hour8"></td>
+              <td class="temp8"></td>
+              <td class="description8"></td>
+              <td><img src="" /></td>
+            </tr>
+            <tr>
+              <td class="hour9"></td>
+              <td class="temp9"></td>
+              <td class="description9"></td>
+              <td><img src="" /></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div id="suggestions" class="suggestions"></div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/7c8801c017.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>

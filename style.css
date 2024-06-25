@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #8deeff;
+}
+
+
+
+.container {
+    position: relative;
+    width: 400px;
+    height: 105px;
+    background: #fff;
+    padding: 28px 32px;
+    overflow: hidden;
+    border-radius: 18px;
+    font-family: 'Roboto', sans-serif;
+    transition: 0.6s ease-out;
+    align-items: baseline;
+}
+
+.search-box {
+    position: relative;
+    width: 100%;
+    height: min-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-box input {
+    color: #06283D;
+    width: 80%;
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-left: 32px;
+    border-radius: 18px;
+}
+
+.search-box input::placeholder {
+    font-size: 20px;
+    font-weight: 500;
+    color: #06283D;
+    text-transform: capitalize;
+}
+
+.search-box button {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    color: #06283D;
+    background: #dff6ff;
+    border-radius: 50%;
+    font-size: 22px;
+    transition: 0.4s ease;
+}
+
+.search-box button:hover {
+    color: #fff;
+    background: #06283D;
+}
+
+.search-box i {
+    position: absolute;
+    color: #06283D;
+    font-size: 28px;
+}
+
+.weather-box {
+    text-align: left;
+}
+
+.weather-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.weather-box img {
+    width: 15%;
+    margin-top: 30px;
+}
+
+.weather-box .temperature {
+    position: relative;
+    color: #06283D;
+    font-size: 1rem;
+    font-weight: 800;
+    margin-left: 40px;
+    margin-top: -30px;
+}
+
+.weather-box .temperature span {
+    position: absolute;
+    margin-left: 4px;
+    font-size: 1rem;
+}
+
+/**
+.weather-box .tempDetailed {
+    color: #06283D;
+    font-size: 12px;
+    font-weight: bold;
+    font-style: italic;
+    margin-left: 90px;
+    margin-top: -17px;
+}
+
+.weather-box .tempDetailed p {
+    margin-bottom: 100px;
+}
+ */
+
+
+.weather-box .description {
+    color: #06283D;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-family: serif;
+    margin-top: 5px;
+}
+
+.weather-details {
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.weather-details .humidity,
+.weather-details .wind {
+    display: flex;
+    align-items: left;
+    width: 50%;
+    height: 100px;
+}
+
+.weather-details .humidity {
+    padding-left: -20px;
+    justify-content: flex-start;
+}
+
+.weather-details .wind {
+    padding-left: 60px;
+    justify-content: flex-end;
+}
+
+.weather-details i {
+    color: #06283D;
+    font-size: 12px;
+    margin-right: 10px;
+    margin-top: 6px;
+}
+
+.weather-details p {
+    color: #06283D;
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.weather-details span {
+    font-size: 12px;
+}
+
+.not-found {
+    display: none;
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    scale: 0;
+    opacity: 0;
+}
+
+.forecast {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.table-forecast {
+    width: 100%;
+    border-collapse: collapse;
+    font-weight: bold;
+}
+
+.table-forecast td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.table-forecast img {
+    width: 15%;
+}
+
+.containerDoContainer .suggestions {
+    position: relative;
+    left: 0;
+    right: 0;
+    margin-left: 5vh;
+    background-color: white;
+    z-index: 1000;
+    max-height: 150px;
+    overflow-y: auto;
+    width: 50%;
+}
+
+.suggestion {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.suggestion:hover {
+    background-color: #f0f0f0;
+}
+
+.weather-box,
+.weather-details,
+.forecastHour {
+    scale: 0;
+    opacity: 0;
+}
+
+.fadeIn {
+    animation: 0.5s fadeIn forwards;
+    ;
+    animation-delay: 0.5s;
+}
+
+@keyframes fadeIn {
+    to {
+        scale: 1;
+        opacity: 1;
+    }
+}
